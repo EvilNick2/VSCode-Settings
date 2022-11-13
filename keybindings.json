@@ -1,0 +1,522 @@
+// Place your key bindings in this file to override the defaults
+[
+	// [F1] - Toggle side bar
+	{
+		"key": "f1",
+		"command": "workbench.action.toggleSidebarVisibility"
+	},
+
+	// [F2] - Toggle minimap
+	{
+		"key": "f2",
+		"command": "editor.action.toggleMinimap"
+	},
+
+	// [F5] - Debug start/continue
+	{
+		"key": "f5",
+		"command": "workbench.action.debug.start",
+		"when": "debuggersAvailable && debugState != 'initializing'"
+	},
+	{
+		"key": "f5",
+		"command": "workbench.action.debug.continue",
+		"when": "inDebugMode"
+	},
+
+	// [F9] - Debug toggle breakpoint
+	{
+		"key": "f9",
+		"command": "editor.debug.action.toggleBreakpoint"
+	},
+
+	// [ALT + UP ARROW] - Move line up
+	{
+		"key": "alt+up",
+		"command": "editor.action.moveLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+
+	// [ALT + DOWN ARROW] - Move line down
+	{
+		"key": "alt+down",
+		"command": "editor.action.moveLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+
+	// [CTRL + D] - Duplicate line/selection
+	{
+		"key": "ctrl+d",
+		"command": "editor.action.copyLinesDownAction",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+d",
+		"command": "editor.action.duplicateSelection"
+	},
+
+	// [CTRL + K] - Toggle line comment
+	{
+		"key": "ctrl+k",
+		"command": "editor.action.commentLine"
+	},
+
+	// [CTRL + SHIFT + K] - Toggle block/selection comment
+	{
+		"key": "ctrl+shift+k",
+		"command": "editor.action.blockComment"
+	},
+
+	// [CTRL + U] - Transform selection to upper case
+	{
+		"key": "ctrl+u",
+		"command": "editor.action.transformToUppercase",
+		"when": "editorTextFocus"
+	},
+
+	// [CTRL + SHIFT + U] - Transform selection to lower case
+	{
+		"key": "ctrl+shift+u",
+		"command": "editor.action.transformToLowercase",
+		"when": "editorTextFocus"
+	},
+
+	// [CTRL + M] - Open markdown preview
+	// * Extension: Markdown Preview Enhanced - https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced
+	{
+		"key": "ctrl+m",
+		"command": "markdown.showPreview",
+		"when": "!notebookEditorFocused && editorLangId == 'markdown'"
+	},
+
+	// [CTRL + ALT + RIGHT ARROW] - Move file into next group
+	{
+		"key": "ctrl+alt+right",
+		"command": "workbench.action.moveEditorToNextGroup"
+	},
+
+	// [CTRL + ALT + LEFT ARROW] - Move file into previous group
+	{
+		"key": "ctrl+alt+left",
+		"command": "workbench.action.moveEditorToPreviousGroup"
+	},
+
+	// [CTRL + O] - Open file
+	{
+		"key": "ctrl+o",
+		"command": "workbench.action.files.openFile"
+	},
+
+	// [CTRL + SHIFT + O] - Open folder
+	{
+		"key": "ctrl+shift+o",
+		"command": "workbench.action.files.openFolder"
+	},
+
+	// [CTRL + SHIFT + W] - Close folder
+	{
+		"key": "ctrl+shift+w",
+		"command": "workbench.action.closeFolder"
+	},
+
+	// [CTRL + ALT + O] - Add folder to workspace
+	{
+		"key": "ctrl+alt+o",
+		"command": "workbench.action.addRootFolder"
+	},
+
+	// [CTRL + ALT + W] - Remove folder from workspace
+	{
+		"key": "ctrl+alt+w",
+		"command": "workbench.action.removeRootFolder"
+	},
+
+	// [CTRL + ALT + L] - Selects the next occurrence of the current selected word.
+	{
+		"key": "ctrl+alt+l",
+		"command": "editor.action.addSelectionToNextFindMatch",
+		"when": "editorFocus"
+	},
+
+	// [CTRL + P] - Go to file within your project's folder
+	{
+		"key": "ctrl+p",
+		"command": "workbench.action.quickOpen"
+	},
+
+	// [CTRL + ALT + V] - Opens HTML file in browser
+	// * Extension: open in browser - https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser
+	{
+		"key": "ctrl+alt+v",
+		"command": "extension.openInDefaultBrowser"
+	},
+
+	// (ABNT2) 	[CTRL + ;] - Select language
+	// (US) 	[CTRL + /] - Select language
+	{
+		"key": "ctrl+oem_2",
+		"command": "workbench.action.editor.changeLanguageMode"
+	},
+
+	// [CTRL + SHIFT + X] - View extensions
+	{
+		"key": "ctrl+shift+x",
+		"command": "workbench.view.extensions",
+		"when": "viewContainer.workbench.view.extensions.enabled"
+	},
+
+	// (ABNT2) 	[CTRL + '] - Toggle integrated terminal
+	// (US) 	[CTRL + BACKTICK] - Toggle integrated terminal
+	{
+		"key": "ctrl+oem_3",
+		"command": "workbench.action.terminal.toggleTerminal",
+		"when": "terminal.active"
+	},
+
+	// [CTRL + J] - Rename symbol (refactor name in entire file)
+	{
+		"key": "ctrl+j",
+		"command": "editor.action.rename"
+	},
+
+	// [CTRL + PLUS] Increase font zoom
+	{
+		"key": "ctrl+oem_plus",
+		"command": "editor.action.fontZoomIn"
+	},
+
+	// [CTRL + MINUS] Decrease font zoom
+	{
+		"key": "ctrl+oem_minus",
+		"command": "editor.action.fontZoomOut"
+	},
+
+	// [CTRL + SHIFT + MINUS] - Reset font zoom
+	{
+		"key": "ctrl+shift+oem_minus",
+		"command": "editor.action.fontZoomReset"
+	},
+
+
+
+
+
+	
+
+	/*************************************************************
+				REMOVE DEFAULT KEYBINDS
+	*************************************************************/
+	{
+		"key": "ctrl+k ctrl+c",
+		"command": "-editor.action.addCommentLine",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+k ctrl+u",
+		"command": "-editor.action.removeCommentLine",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+k",
+		"command": "-editor.action.deleteLines",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+shift+k",
+		"command": "-editor.action.deleteLines",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+k ctrl+u",
+		"command": "-editor.action.transformToUppercase",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+u",
+		"command": "-cursorUndo",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "-workbench.action.toggleSidebarVisibility"
+	},
+	{
+		"key": "f2",
+		"command": "-editor.action.rename",
+		"when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "f2",
+		"command": "-debug.renameWatchExpression",
+		"when": "watchExpressionsFocused"
+	},
+	{
+		"key": "f2",
+		"command": "-debug.setVariable",
+		"when": "variablesFocused"
+	},
+	{
+		"key": "f2",
+		"command": "-remote.tunnel.label",
+		"when": "tunnelViewFocus && tunnelType == 'Forwarded'"
+	},
+	{
+		"key": "ctrl+k ctrl+l",
+		"command": "-editor.action.transformToLowercase",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+u",
+		"command": "-workbench.action.output.toggleOutput",
+		"when": "workbench.panel.output.active"
+	},
+	{
+		"key": "ctrl+d",
+		"command": "-editor.action.addSelectionToNextFindMatch",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+oem_5",
+		"command": "-workbench.action.splitEditor"
+	},
+	{
+		"key": "ctrl+m",
+		"command": "-editor.action.toggleTabFocusMode"
+	},
+	{
+		"key": "ctrl+m",
+		"command": "-editor.action.jumpToBracket",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+k ctrl+oem_5",
+		"command": "-workbench.action.splitEditorOrthogonal"
+	},
+	{
+		"key": "shift+alt+2",
+		"command": "-workbench.action.splitEditor"
+	},
+	{
+		"key": "ctrl+k ctrl+up",
+		"command": "-workbench.action.splitEditor"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "-expandLineSelection",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+shift+l",
+		"command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "shift+alt+i",
+		"command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "-workbench.action.quickOpen"
+	},
+	{
+		"key": "ctrl+e",
+		"command": "-workbench.action.quickOpen"
+	},
+	{
+		"key": "f1",
+		"command": "-workbench.action.showCommands"
+	},
+	{
+		"key": "alt+b",
+		"command": "-extension.openInDefaultBrowser"
+	},
+	{
+		"key": "ctrl+oem_2",
+		"command": "-editor.action.commentLine",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+oem_2",
+		"command": "-toggleExplainMode",
+		"when": "suggestWidgetVisible"
+	},
+	{
+		"key": "ctrl+k m",
+		"command": "-workbench.action.editor.changeLanguageMode"
+	},
+	{
+		"key": "f5",
+		"command": "-workbench.action.debug.start",
+		"when": "debuggersAvailable && debugState != 'initializing'"
+	},
+	{
+		"key": "f5",
+		"command": "-workbench.action.debug.continue",
+		"when": "inDebugMode"
+	},
+	{
+		"key": "f7",
+		"command": "-editor.action.diffReview.next",
+		"when": "isInDiffEditor"
+	},
+	{
+		"key": "f7",
+		"command": "-editor.action.wordHighlight.next",
+		"when": "editorTextFocus && hasWordHighlights"
+	},
+	{
+		"key": "ctrl+shift+e",
+		"command": "-mssql.runQuery",
+		"when": "editorTextFocus && editorLangId == 'sql'"
+	},
+	{
+		"key": "ctrl+shift+c",
+		"command": "-mssql.connect",
+		"when": "editorTextFocus && editorLangId == 'sql'"
+	},
+	{
+		"key": "ctrl+shift+d",
+		"command": "-mssql.disconnect",
+		"when": "editorTextFocus && editorLangId == 'sql'"
+	},
+	{
+		"key": "ctrl+shift+oem_3",
+		"command": "-workbench.action.terminal.new",
+		"when": "terminalProcessSupported"
+	},
+	{
+		"key": "shift+alt+a",
+		"command": "-editor.action.blockComment",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+oem_2",
+		"command": "-editor.action.blockComment",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+k ctrl+oem_2",
+		"command": "-editor.foldAllBlockComments",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+shift+oem_2",
+		"command": "-editor.action.commentLine",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "-editor.action.joinLines",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "-workbench.action.togglePanel"
+	},
+	{
+		"key": "shift+f9",
+		"command": "-editor.debug.action.toggleInlineBreakpoint",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "f9",
+		"command": "-editor.debug.action.toggleBreakpoint",
+		"when": "debuggersAvailable && editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+down",
+		"command": "-editor.action.moveLinesDownAction",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+up",
+		"command": "-editor.action.moveLinesUpAction",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+up",
+		"command": "-editor.action.moveLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+down",
+		"command": "-editor.action.moveLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+o",
+		"command": "-workbench.action.files.openFile"
+	},
+	{
+		"key": "ctrl+k ctrl+o",
+		"command": "-workbench.action.files.openFolder"
+	},
+	{
+		"key": "ctrl+shift+o",
+		"command": "-workbench.action.gotoSymbol"
+	},
+	{
+		"key": "ctrl+shift+5",
+		"command": "-workbench.action.terminal.split",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+alt+right",
+		"command": "-workbench.action.moveEditorToNextGroup"
+	},
+	{
+		"key": "ctrl+alt+left",
+		"command": "-workbench.action.moveEditorToPreviousGroup"
+	},
+	{
+		"key": "ctrl+shift+v",
+		"command": "-markdown.showPreview",
+		"when": "!notebookEditorFocused && editorLangId == 'markdown'"
+	},
+	{
+		"key": "ctrl+shift+m",
+		"command": "markdown.showPreviewToSide",
+		"when": "!notebookEditorFocused && editorLangId == 'markdown'"
+	},
+	{
+		"key": "ctrl+k v",
+		"command": "-markdown.showPreviewToSide",
+		"when": "!notebookEditorFocused && editorLangId == 'markdown'"
+	},
+	{
+		"key": "ctrl+m",
+		"command": "-workbench.action.splitEditor"
+	},
+	{
+		"key": "ctrl+k f",
+		"command": "-workbench.action.closeFolder",
+		"when": "emptyWorkspaceSupport && workbenchState != 'empty'"
+	},
+	{
+		"key": "ctrl+shift+d",
+		"command": "-editor.action.copyLinesDownAction",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+shift+w",
+		"command": "-workbench.action.closeWindow"
+	},
+	{
+		"key": "ctrl+oem_minus",
+		"command": "-workbench.action.zoomOut"
+	},
+	{
+		"key": "ctrl+oem_plus",
+		"command": "-workbench.action.zoomIn"
+	},
+	{
+		"key": "ctrl+shift+oem_minus",
+		"command": "-workbench.action.zoomOut"
+	},
+	{
+		"key": "ctrl+shift+oem_minus",
+		"command": "-notebook.cell.split",
+		"when": "editorTextFocus && inputFocus && notebookEditorFocused"
+	},
+]
