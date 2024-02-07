@@ -14,13 +14,13 @@ These are the keybinds, extentions and settings that I use for VSCode.
 
 ## For Windows users
 After downloading the files, place them in `%appdata%/Code/User/`.
-## Or
-cd $APPDATA/Code/User
-git init
-git remote add origin https://github.com/EvilNick2/VSCode-Settings.git
-git pull
-git checkout master -f
-git branch --set-upstream-to origin/master
+### Or
+* cd $APPDATA/Code/User
+* git init
+* git remote add origin https://github.com/EvilNick2/VSCode-Settings.git
+* git pull
+* git checkout master -f
+* git branch --set-upstream-to origin/master
 
 ## For Linux users
 After downloading the files, place them in `home/YourUserName/.config/Code/User`.
