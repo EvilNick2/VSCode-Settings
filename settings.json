@@ -3,7 +3,6 @@
 	"editor.fontFamily": "'Consolas', 'monospace'",
 	"window.title": "${activeEditorShort}${separator}${rootName}",
 	"editor.wordWrap": "off",
-	"editor.formatOnPaste": true,
 	"editor.multiCursorModifier": "ctrlCmd",
 	"editor.snippetSuggestions": "top",
 	"editor.fontSize": 12,
@@ -16,7 +15,6 @@
 		}
 	},
 	"workbench.startupEditor": "none",
-	"workbench.editor.untitled.hint": "hidden",
 	"workbench.iconTheme": "vscode-icons",
 	"security.workspace.trust.untrustedFiles": "open",
 	"security.workspace.trust.startupPrompt": "never",
@@ -27,11 +25,24 @@
 	"gitlens.currentLine.enabled": false,
 	"gitlens.hovers.currentLine.over": "line",
 	"git.autofetch": true,
-	"customizeUI.stylesheet": {
-		".editor-instance>.monaco-editor:before": "background-image: url('Image URL goes here') !important; content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.1;background-size: cover;",
-		".monaco-editor-background": "background: none!important;",
-		".monaco-editor .margin": "background: none!important;",
-	},
 	"workbench.colorTheme": "Bearded Theme Black & Amethyst",
-
+	"workbench.editor.empty.hint": "hidden",
+	"editor.tabSize": 2,
+	"editor.inlineSuggest.showToolbar": "always",
+	"github.copilot.advanced": {},
+	"github.copilot.editor.enableAutoCompletions": false,
+	"color-highlight.markerType": "outline",
+	"editor.formatOnSave": true,
+	"workbench.editorAssociations": {
+		"*.class": "default"
+	},
+	"simple.readme.settings.github": "EvilNick2",
+	"simple.readme.settings.name": "EvilNick2",
+	"simple.readme.settings.lang": "en",
+	"github.copilot.editor.enableCodeActions": false,
+	"files.exclude": {
+		"**/.git": false
+	},
+	"license.default": "mit",
+	"license.author": "EvilNick2"
 }

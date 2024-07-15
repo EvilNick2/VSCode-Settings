@@ -5,13 +5,11 @@
 		"key": "f1",
 		"command": "workbench.action.toggleSidebarVisibility"
 	},
-
 	// [F2] - Toggle minimap
 	{
 		"key": "f2",
 		"command": "editor.action.toggleMinimap"
 	},
-
 	// [F5] - Debug start/continue
 	{
 		"key": "f5",
@@ -23,27 +21,23 @@
 		"command": "workbench.action.debug.continue",
 		"when": "inDebugMode"
 	},
-
 	// [F9] - Debug toggle breakpoint
 	{
 		"key": "f9",
 		"command": "editor.debug.action.toggleBreakpoint"
 	},
-
 	// [ALT + UP ARROW] - Move line up
 	{
 		"key": "alt+up",
 		"command": "editor.action.moveLinesUpAction",
 		"when": "editorTextFocus && !editorReadonly"
 	},
-
 	// [ALT + DOWN ARROW] - Move line down
 	{
 		"key": "alt+down",
 		"command": "editor.action.moveLinesDownAction",
 		"when": "editorTextFocus && !editorReadonly"
 	},
-
 	// [CTRL + D] - Duplicate line/selection
 	{
 		"key": "ctrl+d",
@@ -54,33 +48,28 @@
 		"key": "ctrl+d",
 		"command": "editor.action.duplicateSelection"
 	},
-
 	// [CTRL + K] - Toggle line comment
 	{
 		"key": "ctrl+k",
 		"command": "editor.action.commentLine"
 	},
-
 	// [CTRL + SHIFT + K] - Toggle block/selection comment
 	{
 		"key": "ctrl+shift+k",
 		"command": "editor.action.blockComment"
 	},
-
 	// [CTRL + U] - Transform selection to upper case
 	{
 		"key": "ctrl+u",
 		"command": "editor.action.transformToUppercase",
 		"when": "editorTextFocus"
 	},
-
 	// [CTRL + SHIFT + U] - Transform selection to lower case
 	{
 		"key": "ctrl+shift+u",
 		"command": "editor.action.transformToLowercase",
 		"when": "editorTextFocus"
 	},
-
 	// [CTRL + M] - Open markdown preview
 	// * Extension: Markdown Preview Enhanced - https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced
 	{
@@ -88,83 +77,70 @@
 		"command": "markdown.showPreview",
 		"when": "!notebookEditorFocused && editorLangId == 'markdown'"
 	},
-
 	// [CTRL + ALT + RIGHT ARROW] - Move file into next group
 	{
 		"key": "ctrl+alt+right",
 		"command": "workbench.action.moveEditorToNextGroup"
 	},
-
 	// [CTRL + ALT + LEFT ARROW] - Move file into previous group
 	{
 		"key": "ctrl+alt+left",
 		"command": "workbench.action.moveEditorToPreviousGroup"
 	},
-
 	// [CTRL + O] - Open file
 	{
 		"key": "ctrl+o",
 		"command": "workbench.action.files.openFile"
 	},
-
 	// [CTRL + SHIFT + O] - Open folder
 	{
 		"key": "ctrl+shift+o",
 		"command": "workbench.action.files.openFolder"
 	},
-
 	// [CTRL + SHIFT + W] - Close folder
 	{
 		"key": "ctrl+shift+w",
 		"command": "workbench.action.closeFolder"
 	},
-
 	// [CTRL + ALT + O] - Add folder to workspace
 	{
 		"key": "ctrl+alt+o",
 		"command": "workbench.action.addRootFolder"
 	},
-
 	// [CTRL + ALT + W] - Remove folder from workspace
 	{
 		"key": "ctrl+alt+w",
 		"command": "workbench.action.removeRootFolder"
 	},
-
 	// [CTRL + ALT + L] - Selects the next occurrence of the current selected word.
 	{
 		"key": "ctrl+alt+l",
 		"command": "editor.action.addSelectionToNextFindMatch",
 		"when": "editorFocus"
 	},
-
 	// [CTRL + P] - Go to file within your project's folder
 	{
 		"key": "ctrl+p",
 		"command": "workbench.action.quickOpen"
 	},
-
 	// [CTRL + ALT + V] - Opens HTML file in browser
 	// * Extension: open in browser - https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser
 	{
 		"key": "ctrl+alt+v",
 		"command": "extension.openInDefaultBrowser"
 	},
-
 	// (ABNT2) 	[CTRL + ;] - Select language
 	// (US) 	[CTRL + /] - Select language
 	{
 		"key": "ctrl+oem_2",
 		"command": "workbench.action.editor.changeLanguageMode"
 	},
-
 	// [CTRL + SHIFT + X] - View extensions
 	{
 		"key": "ctrl+shift+x",
 		"command": "workbench.view.extensions",
 		"when": "viewContainer.workbench.view.extensions.enabled"
 	},
-
 	// (ABNT2) 	[CTRL + '] - Toggle integrated terminal
 	// (US) 	[CTRL + BACKTICK] - Toggle integrated terminal
 	{
@@ -172,37 +148,26 @@
 		"command": "workbench.action.terminal.toggleTerminal",
 		"when": "terminal.active"
 	},
-
 	// [CTRL + J] - Rename symbol (refactor name in entire file)
 	{
 		"key": "ctrl+j",
 		"command": "editor.action.rename"
 	},
-
 	// [CTRL + PLUS] Increase font zoom
 	{
 		"key": "ctrl+oem_plus",
 		"command": "editor.action.fontZoomIn"
 	},
-
 	// [CTRL + MINUS] Decrease font zoom
 	{
 		"key": "ctrl+oem_minus",
 		"command": "editor.action.fontZoomOut"
 	},
-
 	// [CTRL + SHIFT + MINUS] - Reset font zoom
 	{
 		"key": "ctrl+shift+oem_minus",
 		"command": "editor.action.fontZoomReset"
 	},
-
-
-
-
-
-	
-
 	/*************************************************************
 				REMOVE DEFAULT KEYBINDS
 	*************************************************************/
@@ -518,5 +483,5 @@
 		"key": "ctrl+shift+oem_minus",
 		"command": "-notebook.cell.split",
 		"when": "editorTextFocus && inputFocus && notebookEditorFocused"
-	},
+	}
 ]

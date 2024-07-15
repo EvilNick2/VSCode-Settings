@@ -10,7 +10,6 @@ These are the keybinds, extentions and settings that I use for VSCode.
 * [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
 * [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 * [Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme)
-* [Customize UI](https://marketplace.visualstudio.com/items?itemName=iocave.customize-ui) - Needed for backgrounds to work
 
 ## For Windows users
 After downloading the files, place them in `%appdata%/Code/User/`.
@@ -22,16 +21,15 @@ After downloading the files, place them in `%appdata%/Code/User/`.
 * git checkout master -f
 * git branch --set-upstream-to origin/master
 
-## For Linux users
+### For Linux users
 After downloading the files, place them in `home/YourUserName/.config/Code/User`.
+
+## Post installation
+After installing the files you can optionally run the included extensions.sh script with bash
 
 ## Keybindings
 If you'd like to know what keybinds are available, you can open `keybindings.json` which contains comments 
 explaining what each keybind does.
-
-## Editor Background
-To edit the background image used by the editor open `settings.json` and replace "Image URL goes here" with
-whatever image you want.
 
 ## Settings
 * **Encoding type**: UTF-8
