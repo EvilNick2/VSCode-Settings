@@ -44,5 +44,6 @@
 		"**/.git": false
 	},
 	"license.default": "mit",
-	"license.author": "EvilNick2"
+	"license.author": "EvilNick2",
+	"markdown-preview-enhanced.previewTheme": "github-dark.css"
 }
