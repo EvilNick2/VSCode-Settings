@@ -18,6 +18,7 @@ extensions=(
     "piotrpalarz.vscode-gitignore-generator"
     "ultram4rine.vscode-choosealicense"
     "evilnick.git-initialize"
+    "WakaTime.vscode-wakatime"
 )
 
 # Loop through each extension ID and install it
