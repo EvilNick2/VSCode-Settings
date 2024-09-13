@@ -19,6 +19,7 @@ extensions=(
     "ultram4rine.vscode-choosealicense"
     "evilnick.git-initialize"
     "WakaTime.vscode-wakatime"
+    "oderwat.indent-rainbow"
 )
 
 # Loop through each extension ID and install it
