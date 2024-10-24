@@ -2,7 +2,7 @@
 	"files.encoding": "utf8",
 	"editor.fontFamily": "'Consolas', 'monospace'",
 	"window.title": "${activeEditorShort}${separator}${rootName}",
-	"editor.wordWrap": "off",
+	"editor.wordWrap": "on",
 	"editor.multiCursorModifier": "ctrlCmd",
 	"editor.snippetSuggestions": "top",
 	"editor.fontSize": 12,
@@ -25,14 +25,12 @@
 	"gitlens.currentLine.enabled": false,
 	"gitlens.hovers.currentLine.over": "line",
 	"git.autofetch": true,
-	"workbench.colorTheme": "Bearded Theme Black & Amethyst",
 	"workbench.editor.empty.hint": "hidden",
 	"editor.tabSize": 2,
 	"editor.inlineSuggest.showToolbar": "always",
 	"github.copilot.advanced": {},
 	"github.copilot.editor.enableAutoCompletions": false,
 	"color-highlight.markerType": "outline",
-	"editor.formatOnSave": true,
 	"workbench.editorAssociations": {
 		"*.class": "default"
 	},
@@ -45,5 +43,67 @@
 	},
 	"license.default": "mit",
 	"license.author": "EvilNick2",
-	"markdown-preview-enhanced.previewTheme": "github-dark.css"
+	"markdown-preview-enhanced.previewTheme": "github-dark.css",
+	"editor.formatOnSave": false,
+  "background.fullscreen": {
+		"images": [
+			"file:///C:/Users/Nick/AppData/Roaming/Code/User/backgrounds/cyberpunk/background.jpg"
+		],
+		"opacity": 0.91,
+		"size": "cover",
+		"position": "center",
+		"interval": 0,
+		"random": false
+	},
+	"workbench.colorTheme": "Activate SCARLET protocol (beta)",
+	"background.enabled": true,
+  "settings.cycle": [
+      {
+        "id": "colorTheme",
+        "overrideWorkspaceSettings": false,
+        "values": [
+          {
+            "workbench.colorTheme": "Bearded Theme Black & Amethyst",
+						"background.fullscreen": {
+							// Local images can be dragged into the browser to quickly get the file protocol address from the address bar
+							"images": ["file:///C:/Users/Nick/AppData/Roaming/Code/User/backgrounds/amethyst/background.gif"],
+							"opacity": 0.91,
+							"size": "cover",
+							"position": "center",
+							"interval": 0,
+							"random": false
+						}
+          },
+					{
+            "workbench.colorTheme": "Bearded Theme Black & Amethyst",
+						"background.fullscreen": {
+							// Local images can be dragged into the browser to quickly get the file protocol address from the address bar
+							"images": [
+								"file:///C:/Users/Nick/AppData/Roaming/Code/User/backgrounds/carousel/background1.jpg",
+								"file:///C:/Users/Nick/AppData/Roaming/Code/User/backgrounds/carousel/background2.jpg",
+								"file:///C:/Users/Nick/AppData/Roaming/Code/User/backgrounds/carousel/background3.webp",
+								"file:///C:/Users/Nick/AppData/Roaming/Code/User/backgrounds/carousel/background4.png"
+							],
+							"opacity": 0.91,
+							"size": "cover",
+							"position": "center",
+							"interval": 120,
+							"random": true
+						}
+          },
+          {
+            "workbench.colorTheme": "Activate SCARLET protocol (beta)",
+						"background.fullscreen": {
+							// Local images can be dragged into the browser to quickly get the file protocol address from the address bar
+							"images": ["file:///C:/Users/Nick/AppData/Roaming/Code/User/backgrounds/cyberpunk/background.jpg"],
+							"opacity": 0.91,
+							"size": "cover",
+							"position": "center",
+							"interval": 0,
+							"random": false
+						}
+          }
+        ]
+      }
+		]
 }

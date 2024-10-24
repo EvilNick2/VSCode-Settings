@@ -1,30 +1,30 @@
 #!/bin/bash
 
-# Define a list of VS Code extension IDs to install
 extensions=(
-    "beardedbear.beardedtheme"
-    "donjayamanne.githistory"
-    "eamodio.gitlens"
-    "ethansk.restore-terminals"
-    "github.copilot"
-    "github.copilot-chat"
+    "vscode-icons-team.vscode-icons"
     "icrawl.discord-vscode"
     "ms-vscode-remote.remote-ssh"
     "ms-vscode-remote.remote-ssh-edit"
     "ms-vscode.remote-explorer"
+    "ethansk.restore-terminals"
+    "eamodio.gitlens"
+    "donjayamanne.githistory"
     "shd101wyy.markdown-preview-enhanced"
-    "vscode-icons-team.vscode-icons"
+    "beardedbear.beardedtheme"
+    "github.copilot"
+    "github.copilot-chat"
     "maurodesouza.vscode-simple-readme"
     "piotrpalarz.vscode-gitignore-generator"
     "ultram4rine.vscode-choosealicense"
     "evilnick.git-initialize"
     "WakaTime.vscode-wakatime"
     "oderwat.indent-rainbow"
+    "shalldie.background"
+    "max-SS.Cyberpunk"
+    "hoovercj.vscode-settings-cycler"
 )
 
-# Loop through each extension ID and install it
 for extension in "${extensions[@]}"; do
-    # Check if the extension is already installed
     if ! code --list-extensions | grep -q "^$extension$"; then
         echo "Installing $extension..."
         code --install-extension $extension
