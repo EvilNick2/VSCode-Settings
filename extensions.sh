@@ -27,7 +27,7 @@ extensions=(
 for extension in "${extensions[@]}"; do
     if ! code --list-extensions | grep -q "^$extension$"; then
         echo "Installing $extension..."
-        code --install-extension $extension
+        code --install-extension $extension > /dev/null 2>&1
     else
         echo "$extension is already installed."
     fi
