@@ -49,7 +49,7 @@
 		"images": [
 			"file:///C:/Users/Nick/AppData/Roaming/Code/User/backgrounds/cyberpunk/background.jpg"
 		],
-		"opacity": 0.91,
+		"opacity": 0.86,
 		"size": "cover",
 		"position": "center",
 		"interval": 0,
@@ -67,7 +67,7 @@
 						"background.fullscreen": {
 							// Local images can be dragged into the browser to quickly get the file protocol address from the address bar
 							"images": ["file:///C:/Users/Nick/AppData/Roaming/Code/User/backgrounds/amethyst/background.gif"],
-							"opacity": 0.91,
+							"opacity": 0.86,
 							"size": "cover",
 							"position": "center",
 							"interval": 0,
@@ -84,7 +84,7 @@
 								"file:///C:/Users/Nick/AppData/Roaming/Code/User/backgrounds/carousel/background3.webp",
 								"file:///C:/Users/Nick/AppData/Roaming/Code/User/backgrounds/carousel/background4.png"
 							],
-							"opacity": 0.91,
+							"opacity": 0.86,
 							"size": "cover",
 							"position": "center",
 							"interval": 120,
@@ -96,7 +96,7 @@
 						"background.fullscreen": {
 							// Local images can be dragged into the browser to quickly get the file protocol address from the address bar
 							"images": ["file:///C:/Users/Nick/AppData/Roaming/Code/User/backgrounds/cyberpunk/background.jpg"],
-							"opacity": 0.91,
+							"opacity": 0.86,
 							"size": "cover",
 							"position": "center",
 							"interval": 0,
