@@ -35,7 +35,14 @@ After downloading the files, place them in `%appdata%/Code/User/`.
 * git branch --set-upstream-to origin/master
 
 ### For Linux users
-After downloading the files, place them in `home/YourUserName/.config/Code/User`.
+After downloading the files, place them in `~/.config/Code/User`.
+### Or
+* cd ~/.config/Code/User
+* git init
+* git remote add origin https://github.com/EvilNick2/VSCode-Settings.git
+* git pull
+* git checkout master -f
+* git branch --set-upstream-to origin/master
 
 ## Post installation
 After installing the files you can optionally run the included `extensions.sh` script with bash\
