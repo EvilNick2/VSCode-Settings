@@ -1,0 +1,60 @@
+{
+	"CSS Boilerplate": {
+		"scope": "css,scss,php",
+		"prefix": "css:bp",
+		"body": [
+			":root {",
+			"  --dark-mode-color: #292929;",
+			"  --dark-mode-foreground: #161616;",
+			"  --light-mode-color: #fafafa;",
+			"  --light-mode-foreground: #f0f0f0;",
+			"  --accentcolor-1: #a480f2;",
+			"  --accentcolor-1-dark: #6053b0;",
+			"  --accentcolor-2: #ea9ab2;",
+			"  --accentcolor-2-dark: #e27396;",
+			"  --success-color: #4caf50;",
+			"  --warning-color: #8a0000;",
+			"  --primary-color: var(--accentcolor-1);",
+			"  --primary-color-dark: var(--accentcolor-1-dark);",
+			"  --secondary-color: var(--accentcolor-2);",
+			"  --secondary-color-dark: var(--accentcolor-2-dark);",
+			"  --background-color: var(--dark-mode-color);",
+			"  --background-color-secondary: var(--dark-mode-foreground);",
+			"  --foreground-color: var(--light-mode-color);",
+			"  --foreground-color-secondary: var(--light-mode-foreground);",
+			"}",
+			"",
+			"* {",
+			"  margin: 0;",
+			"  padding: 0;",
+			"  box-sizing: border-box;",
+			"}",
+			"",
+			"body {",
+			"  font-family: Arial, Helvetica, sans-serif;",
+			"  background-color: var(--background-color);",
+			"  color: var(--foreground-color);",
+			"}"
+		],
+		"description": "Basic CSS Boilerplate code"
+	},
+	"HTML5 Boilerplate": {
+		"scope": "html,php",
+		"prefix": "html:bp",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"en\">",
+			"<head>",
+			"\t<meta charset=\"UTF-8\">",
+			"\t<meta name=\"viewport\" content=\"width=${1:device-width}, initial-scale=${2:1.0}\">",
+			"\t<link rel=\"stylesheet\" href=\"${3:css/style.css}\">",
+			"\t<title>${4:Document}</title>",
+			"</head>",
+			"<body>",
+			"\t$0",
+			"</body>",
+			"</html>"
+		],
+		"description": "Basic HTML5 Boilerplate code"
+	}
+}
