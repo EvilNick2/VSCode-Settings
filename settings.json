@@ -30,13 +30,11 @@
 	"editor.inlineSuggest.showToolbar": "always",
 	"github.copilot.advanced": {},
 	"github.copilot.editor.enableAutoCompletions": false,
-	"color-highlight.markerType": "outline",
 	"workbench.editorAssociations": {
 		"*.class": "default"
 	},
-	"simple.readme.settings.github": "EvilNick2",
-	"simple.readme.settings.name": "EvilNick2",
-	"simple.readme.settings.lang": "en",
+	"readme.generator.settings.github": "EvilNick2",
+	"readme.generator.settings.name": "EvilNick2",
 	"github.copilot.editor.enableCodeActions": false,
 	"files.exclude": {
 		"**/.git": false
@@ -49,7 +47,7 @@
 		"images": [
 			"file:///C:/Users/Nick/AppData/Roaming/Code/User/backgrounds/cyberpunk/background.jpg"
 		],
-		"opacity": 0.86,
+		"opacity": 0.05,
 		"size": "cover",
 		"position": "center",
 		"interval": 0,
@@ -67,7 +65,7 @@
 						"background.fullscreen": {
 							// Local images can be dragged into the browser to quickly get the file protocol address from the address bar
 							"images": ["file:///C:/Users/Nick/AppData/Roaming/Code/User/backgrounds/amethyst/background.gif"],
-							"opacity": 0.86,
+							"opacity": 0.05,
 							"size": "cover",
 							"position": "center",
 							"interval": 0,
@@ -84,7 +82,7 @@
 								"file:///C:/Users/Nick/AppData/Roaming/Code/User/backgrounds/carousel/background3.webp",
 								"file:///C:/Users/Nick/AppData/Roaming/Code/User/backgrounds/carousel/background4.png"
 							],
-							"opacity": 0.86,
+							"opacity": 0.05,
 							"size": "cover",
 							"position": "center",
 							"interval": 120,
@@ -96,7 +94,7 @@
 						"background.fullscreen": {
 							// Local images can be dragged into the browser to quickly get the file protocol address from the address bar
 							"images": ["file:///C:/Users/Nick/AppData/Roaming/Code/User/backgrounds/cyberpunk/background.jpg"],
-							"opacity": 0.86,
+							"opacity": 0.05,
 							"size": "cover",
 							"position": "center",
 							"interval": 0,

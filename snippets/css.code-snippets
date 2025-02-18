@@ -1,0 +1,48 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"CSS Boilerplate": {
+		"scope": "css,scss,php",
+		"prefix": "css:basic",
+		"body": [
+      ":root {",
+      "  --dark-mode-color: #292929;",
+      "  --dark-mode-foreground: #161616;",
+      "  --light-mode-color: #fafafa;",
+      "  --light-mode-foreground: #f0f0f0;",
+      "  --accentcolor-1: #a480f2;",
+      "  --accentcolor-1-dark: #6053b0;",
+      "  --accentcolor-2: #ea9ab2;",
+      "  --accentcolor-2-dark: #e27396;",
+      "  --success-color: #4caf50;",
+      "  --warning-color: #8a0000;",
+      "  --primary-color: var(--accentcolor-1);",
+      "  --primary-color-dark: var(--accentcolor-1-dark);",
+      "  --secondary-color: var(--accentcolor-2);",
+      "  --secondary-color-dark: var(--accentcolor-2-dark);",
+      "  --background-color: var(--dark-mode-color);",
+      "  --background-color-secondary: var(--dark-mode-foreground);",
+      "  --foreground-color: var(--light-mode-color);",
+      "  --foreground-color-secondary: var(--light-mode-foreground);",
+      "}",
+      "",
+      "* {",
+      "  margin: 0;",
+      "  padding: 0;",
+      "  box-sizing: border-box;",
+      "}",
+      "",
+      "body {",
+      "  font-family: Arial, Helvetica, sans-serif;",
+      "  background-color: var(--background-color);",
+      "  color: var(--foreground-color);",
+      "}"
+		],
+		"description": "Basic CSS Boilerplate code"
+	}
+}

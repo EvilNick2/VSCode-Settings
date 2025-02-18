@@ -199,20 +199,15 @@
 
 	// [CTRL + SHIFT + T] - Switch theme profiles
 	{
-		"command": "runCommands",
     "key": "ctrl+shift+t",
+		"command": "runCommands",
 		"args": {
-    	"commands": [
+			"commands": [
 				"settings.cycle.colorTheme",
 				"extension.background.install"
 			]
 		}
 	},
-
-
-
-
-	
 
 	/*************************************************************
 				REMOVE DEFAULT KEYBINDS
