@@ -152,3 +152,67 @@ done
 
 echo ""
 echo -e "${CLR_GREEN}Extension installation complete.${CLR_RESET}"
+
+# ============================================================
+#  PATCH SETTINGS — fix background image paths for this OS
+# ============================================================
+
+get_config_dir() {
+    local cli="$1"
+    if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" || "$OSTYPE" == "win32" ]]; then
+        local appdata
+        appdata="$(cmd.exe /c echo %APPDATA% 2>/dev/null | tr -d '\r')"
+        case "$cli" in
+            code)        echo "$appdata/Code/User" ;;
+            windsurf)    echo "$appdata/Windsurf/User" ;;
+            cursor)      echo "$appdata/Cursor/User" ;;
+            antigravity) echo "$appdata/Antigravity/User" ;;
+            *)           echo "$appdata/Code/User" ;;
+        esac
+    else
+        case "$cli" in
+            code)        echo "$HOME/.config/Code/User" ;;
+            windsurf)    echo "$HOME/.config/Windsurf/User" ;;
+            cursor)      echo "$HOME/.config/Cursor/User" ;;
+            antigravity) echo "$HOME/.config/Antigravity/User" ;;
+            *)           echo "$HOME/.config/Code/User" ;;
+        esac
+    fi
+}
+
+to_file_uri() {
+    local path="$1"
+    if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" || "$OSTYPE" == "win32" ]]; then
+        local winpath
+        winpath="$(echo "$path" | sed 's|^/\([a-zA-Z]\)/|\1:/|')"
+        echo "file:///$winpath"
+    else
+        echo "file://$path"
+    fi
+}
+
+patch_settings() {
+    local settings_file="$1"
+
+    if [[ ! -f "$settings_file" ]]; then
+        echo -e "  ${CLR_YELLOW}[SKIP]${CLR_RESET} settings.json not found at $settings_file"
+        return
+    fi
+
+    local config_dir
+    config_dir="$(dirname "$settings_file")"
+    local backgrounds_path
+    backgrounds_path="$(to_file_uri "$config_dir/backgrounds")"
+
+    echo -e "  ${CLR_CYAN}[-->]${CLR_RESET} Patching background image paths to $backgrounds_path..."
+
+    sed -i "s|file:///[^\"]*backgrounds/|$backgrounds_path/|g" "$settings_file"
+
+    echo -e "  ${CLR_GREEN}[OK]${CLR_RESET} Background paths updated"
+}
+
+echo ""
+echo -e "${CLR_CYAN}Patching settings...${CLR_RESET}"
+
+config_dir="$(get_config_dir "$CLI")"
+patch_settings "$config_dir/settings.json"
