@@ -62,8 +62,9 @@
 			"values": [
 				{
 					"background.fullscreen": {
+						// Local images can be dragged into the browser to quickly get the file protocol address from the address bar
 						"images": [
-							"file:///C:/Users/Nick/AppData/Roaming/Code/User/backgrounds/cyberpunk/background.jpg"
+							"file:///C:/Users/Nick/AppData/Roaming/Code/User/backgrounds/amethyst/background.gif"
 						],
 						"opacity": 0.05,
 						"size": "cover",
@@ -71,7 +72,7 @@
 						"interval": 0,
 						"random": false
 					},
-					"workbench.colorTheme": "Activate SCARLET protocol (beta)",
+					"workbench.colorTheme": "Bearded Theme Black & Amethyst",
 					"background.enabled": true
 				},
 				{
