@@ -169,7 +169,8 @@ get_config_dir() {
             code)        echo "$appdata/Code/User" ;;
             windsurf)    echo "$appdata/Windsurf/User" ;;
             cursor)      echo "$appdata/Cursor/User" ;;
-            antigravity | antigravity-ide) echo "$appdata/Antigravity/User" ;;
+            antigravity)     echo "$appdata/Antigravity/User" ;;
+            antigravity-ide) echo "$appdata/Antigravity IDE/User" ;;
             *)           echo "$appdata/Code/User" ;;
         esac
     else
