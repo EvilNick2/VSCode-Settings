@@ -82,6 +82,9 @@ OPENVSX_SKIP=(
     "ms-vscode.remote-explorer"
     "github.copilot"
     "github.copilot-chat"
+    "ethansk.restore-terminals"
+    "evilnick2.evilnick2-readme-generator"
+    "evilnick2.evilnick2-git-initialize"
 )
 
 # ============================================================
