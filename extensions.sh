@@ -174,7 +174,8 @@ get_config_dir() {
             code)        echo "$HOME/.config/Code/User" ;;
             windsurf)    echo "$HOME/.config/Windsurf/User" ;;
             cursor)      echo "$HOME/.config/Cursor/User" ;;
-            antigravity | antigravity-ide) echo "$HOME/.config/Antigravity/User" ;;
+            antigravity)     echo "$HOME/.config/Antigravity/User" ;;
+            antigravity-ide) echo "$HOME/.config/Antigravity IDE/User" ;;
             *)           echo "$HOME/.config/Code/User" ;;
         esac
     fi
