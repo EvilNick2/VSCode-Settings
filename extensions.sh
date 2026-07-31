@@ -165,6 +165,7 @@ get_config_dir() {
     if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" || "$OSTYPE" == "win32" ]]; then
         local appdata
         appdata="$(cmd.exe /c echo %APPDATA% 2>/dev/null | tr -d '\r')"
+        appdata="${appdata//\\//}"
         case "$cli" in
             code)        echo "$appdata/Code/User" ;;
             windsurf)    echo "$appdata/Windsurf/User" ;;
