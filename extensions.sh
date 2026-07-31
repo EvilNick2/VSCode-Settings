@@ -164,7 +164,10 @@ get_config_dir() {
     local cli="$1"
     if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" || "$OSTYPE" == "win32" ]]; then
         local appdata
-        appdata="$(cmd.exe /c echo %APPDATA% 2>/dev/null | tr -d '\r')"
+        appdata="${APPDATA:-}"
+        if [[ -z "$appdata" ]]; then
+            appdata="$(cmd.exe /c echo %APPDATA% 2>/dev/null | tr -d '\r')"
+        fi
         appdata="${appdata//\\//}"
         case "$cli" in
             code)        echo "$appdata/Code/User" ;;
